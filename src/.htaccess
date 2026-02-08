@@ -1,0 +1,4 @@
+# C:\OSPanel\home\ospanel.local\public\src\.htaccess
+Options +Indexes +FollowSymLinks
+AllowOverride All
+Require all granted

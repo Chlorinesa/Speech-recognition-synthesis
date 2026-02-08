@@ -1,0 +1,98 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+/* Логотип меню */
+
+.sideLogo{
+    height: 35px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Кнопки таблицы */
+
+.buttonInTable{
+    width: 70px;
+    height: 28px;
+    font-size: 12px;
+}
+
+/* Скроллбар таблицы */
+
+:root {
+  --scroll-thumb: #ededed;
+  --scroll-thumb-hover: #d8d8d8;
+}
+.dark-mode {
+  --scroll-thumb: #404040;
+  --scroll-thumb-hover: #343434;
+}
+
+.ant-table-tbody-virtual-scrollbar-thumb {
+  background: var(--scroll-thumb) !important;
+}
+.ant-table-tbody-virtual-scrollbar-thumb:active,
+.ant-table-tbody-virtual-scrollbar-thumb-moving {
+  background: var(--scroll-thumb-hover) !important;
+}
+
+/* Сглаживание смены цвета при изменении темы */
+
+*, *::before, *::after {
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.ant-btn,
+.ant-input-outlined,
+.ant-pagination-options,
+.ant-select-selector,
+.ant-select-selection-item,
+.ant-table tbody td,
+.ant-table tbody tr,
+.ant-table thead th,
+.ant-table-cell,
+.ant-table-row,
+.ant-table-tbody,
+.ant-table-wrapper {
+    transition: all 0.3s ease, color 0s ease !important;
+}
