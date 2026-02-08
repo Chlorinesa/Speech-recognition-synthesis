@@ -73,7 +73,7 @@ cp .env.example .env
 ```env
 DB_HOST=localhost
 DB_NAME=synthesis_db
-DB_USER=postgres
+DB_USER=your_user_here
 DB_PASSWORD=your_password_here
 ```
 
