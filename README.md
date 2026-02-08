@@ -100,7 +100,6 @@ npm run build
 ## Конфигурация
 
 ### Настройка сервера распознавания (STT)
-По умолчанию приложение использует сервер по адресу `http://172.31.1.1:5002`.
 Для изменения адреса обновите файл `src/hooks/useSttService.js`.
 
 ### Настройка базы данных
@@ -132,9 +131,6 @@ npm run build
 - Chrome 33+
 - Edge 79+
 - Safari 14+
-
-### Сервер распознавания недоступен
-Убедитесь, что STT сервер запущен и доступен по адресу `http://172.31.1.1:5002`. При необходимости измените адрес в `src/hooks/useSttService.js`.
 
 ## Контакты
 - Репозиторий: [https://github.com/Chlorinesa/Speech-recognition-synthesis](https://github.com/Chlorinesa/Speech-recognition-synthesis)
